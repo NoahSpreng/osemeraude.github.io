@@ -81,14 +81,3 @@ body {
 .banner h1 span {
   color: var(--green);
 }
-
-@media (max-width: 768px) {
-  .banner {
-    padding: 30px 15px;
-  }
-
-  .banner h1 {
-    font-size: 36px;
-    letter-spacing: 0.08em;
-  }
-}
