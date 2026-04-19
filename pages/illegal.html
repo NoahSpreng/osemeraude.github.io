@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DISTRICT FA — Illégal</title>
+  <link rel="stylesheet" href="../assets/illegal.css">
+  <link rel="stylesheet" href="../assets/navbar.css">
+
+</head>
+<body>
+ 
+  <header>
+    <h1>Réglements - DISTRICT FA</h1>
+    <nav>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="global.html">Global</a></li>
+        <li><a href="legal.html">Légal</a></li>
+        <li><a href="illegal.html" class="active">Illégal</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <div class="banner">
+    <h1>ILLÉ<span>GAL</span></h1>
+  </div>
+ 
+  <p class="illegal-intro">Le règlement illégal s'applique à tout joueur pratiquant une activité illégale.</p>
+ 
+  <div class="deroule">
+ 
+    <!-- 01 Global -->
+    <div class="acc-item open">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">01</span>
+        <div class="acc-info">
+          <div class="acc-title">Global</div>
+          <div class="acc-sub">Règles, tenues & best of</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item open">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Comportement général</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Toute activité illégale doit être jouée de manière cohérente avec votre personnage.</li>
+              <li>Le fail RP lors d'activités illégales est strictement interdit.</li>
+              <li>Le metagaming est interdit en toutes circonstances.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Tenues & apparence</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Les tenues doivent correspondre à l'activité pratiquée.</li>
+              <li>Masque obligatoire lors de tout braquage.</li>
+              <li>Aucune tenue incohérente avec le personnage joué.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Sanctions</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Tout manquement au règlement global entraîne un avertissement.</li>
+              <li>Trois avertissements = ban temporaire.</li>
+              <li>Les récidivistes sont bannis définitivement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 02 Braquages -->
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">02</span>
+        <div class="acc-info">
+          <div class="acc-title">Braquages</div>
+          <div class="acc-sub">Règles, vol & limitations</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Petits braquages</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Maximum 3 braqueurs par petite opération.</li>
+              <li>Délai de 1h entre deux braquages du même magasin.</li>
+              <li>Armes de poing uniquement.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Grands braquages</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Maximum 6 braqueurs par opération.</li>
+              <li>Délai de 2h minimum entre deux braquages du même établissement.</li>
+              <li>L'utilisation de véhicules blindés est soumise à autorisation.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Otages</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Les otages doivent être traités de manière RP.</li>
+              <li>Aucune violence gratuite sur les otages.</li>
+              <li>La libération doit être jouée jusqu'au bout.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 03 Armes -->
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">03</span>
+        <div class="acc-info">
+          <div class="acc-title">Armes</div>
+          <div class="acc-sub">Port, possession & trafic</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Port d'arme</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Le port d'arme longue en zone urbaine est interdit sauf contexte RP justifié.</li>
+              <li>Toute arme doit avoir une origine RP traçable.</li>
+              <li>Le deathmatch sans raison entraîne un ban immédiat.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Trafic d'armes</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Le trafic nécessite un contact établi avec un fournisseur RP.</li>
+              <li>Les transactions doivent être jouées en RP complet.</li>
+              <li>Aucune vente en zone publique ou animée.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Stockage</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Le stockage est limité par joueur pour éviter les abus.</li>
+              <li>Tout stock détecté hors limite sera confisqué.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 04 Drogues -->
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">04</span>
+        <div class="acc-info">
+          <div class="acc-title">Drogues</div>
+          <div class="acc-sub">Revente, production & vente</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Production</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>La production est limitée aux zones désignées sur la carte.</li>
+              <li>Toute production hors zone entraîne une saisie immédiate.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Revente</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>La revente est interdite en zones de spawn et commissariats.</li>
+              <li>Le stockage maximum par joueur est limité.</li>
+              <li>Les guerres de territoire liées au trafic doivent être déclarées au staff.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Consommation</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>La consommation doit être jouée de manière réaliste.</li>
+              <li>Les effets doivent être interprétés en RP.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 05 Gangs -->
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">05</span>
+        <div class="acc-info">
+          <div class="acc-title">Gangs & Territoires</div>
+          <div class="acc-sub">Structure, conflits & règles</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Création & validation</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Un gang doit être validé par le staff avant toute activité officielle.</li>
+              <li>Minimum 4 membres actifs pour créer un gang.</li>
+              <li>Un dossier de présentation doit être soumis sur le Discord.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Conflits</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Les conflits inter-gangs doivent avoir une raison RP établie.</li>
+              <li>Maximum 8 membres actifs lors d'un conflit armé.</li>
+              <li>Aucun conflit dans les zones protégées.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Territoires</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>La prise de territoire se fait via un système de points défini par le staff.</li>
+              <li>Un territoire peut être contesté toutes les 48h.</li>
+              <li>Le staff peut annuler une prise de territoire en cas d'abus.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 06 Kidnapping -->
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">06</span>
+        <div class="acc-info">
+          <div class="acc-title">Kidnapping</div>
+          <div class="acc-sub">Enlèvement, rançon & libération</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Conditions</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Le kidnapping doit avoir une raison RP valable.</li>
+              <li>La durée maximale de séquestration est de 30 minutes.</li>
+              <li>La victime doit pouvoir jouer sa scène correctement.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Rançon</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>La rançon doit être cohérente avec le contexte RP.</li>
+              <li>Aucun montant abusif ne sera toléré.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- 07 Corruption -->
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggle(this)">
+        <span class="acc-num">07</span>
+        <div class="acc-info">
+          <div class="acc-title">Corruption</div>
+          <div class="acc-sub">Flics, fonctionnaires & limites</div>
+        </div>
+        <span class="acc-arrow">▼</span>
+      </div>
+      <div class="acc-body">
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Règles générales</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>La corruption doit être validée par le staff au préalable.</li>
+              <li>Un flic corrompu ne peut pas couvrir tous les crimes.</li>
+              <li>La corruption abusive entraîne une sanction immédiate.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-item">
+          <div class="sub-header" onclick="toggleSub(this)">
+            <span class="sub-title">Limites</span>
+            <span class="sub-arrow">▼</span>
+          </div>
+          <div class="sub-body">
+            <ul>
+              <li>Pas plus de 2 flics corrompus actifs en même temps.</li>
+              <li>La corruption ne peut pas effacer un mandat d'arrêt existant.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <script>
+    function toggle(header) {
+      const item = header.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.acc-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+ 
+    function toggleSub(header) {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+    }
+  </script>
+ 
+</body>
+</html>
