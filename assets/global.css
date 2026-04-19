@@ -5,8 +5,9 @@
 }
 
 :root {
-  --blue:        #3080e0;
-  --blue-dark:   #2060c0;
+  --accent: #30e060;
+  --green:       #30e060;
+  --green-dark:  #20c050;
   --bg:          #0d0d0d;
   --bg-2:        #111;
   --bg-3:        #161616;
@@ -14,7 +15,6 @@
   --text:        #eee;
   --muted:       #666;
   --muted-light: #888;
-  --accent: #3080e0;
 }
 
 /* ─────────────────────────
@@ -55,7 +55,7 @@ body {
 ───────────────────────── */
 .banner {
   background: #0a0a0a;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--green);
   padding: 52px 0;
   text-align: center;
   position: relative;
@@ -68,7 +68,7 @@ body {
   inset: 0;
   background: radial-gradient(
     ellipse 60% 80% at 50% 120%,
-    rgba(48,128,224,0.10) 0%,
+    rgba(48,224,96,0.10) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -83,5 +83,46 @@ body {
 }
 
 .banner h1 span {
-  color: var(--blue);
+  color: var(--green);
+}
+
+/* ─────────────────────────
+   RESPONSIVE
+───────────────────────── */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .page-content {
+    padding: 0 1.5rem 70px;
+  }
+
+  .banner {
+    padding: 42px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .page-content {
+    padding: 0 1rem 60px;
+  }
+
+  .banner {
+    padding: 34px 0;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .page-content {
+    padding: 0 0.8rem 50px;
+  }
+
+  .banner {
+    padding: 28px 0;
+  }
 }
