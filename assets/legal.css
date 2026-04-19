@@ -66,13 +66,17 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 50% 120%, rgba(48,224,96,0.10) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse 60% 80% at 50% 120%,
+    rgba(48,224,96,0.10) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
 .banner h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 64px;
+  font-size: clamp(26px, 5vw, 64px);
   letter-spacing: 0.12em;
   color: #fff;
   position: relative;
@@ -80,4 +84,45 @@ body {
 
 .banner h1 span {
   color: var(--green);
+}
+
+/* ─────────────────────────
+   RESPONSIVE
+───────────────────────── */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .page-content {
+    padding: 0 1.5rem 70px;
+  }
+
+  .banner {
+    padding: 42px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .page-content {
+    padding: 0 1rem 60px;
+  }
+
+  .banner {
+    padding: 34px 0;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .page-content {
+    padding: 0 0.8rem 50px;
+  }
+
+  .banner {
+    padding: 28px 0;
+  }
 }
