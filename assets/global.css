@@ -34,7 +34,7 @@ body {
   min-height: 100vh;
 }
 
-/* LAYOUT (retour structure propre comme ton rouge) */
+/* LAYOUT */
 .page-content,
 .deroule,
 .illegal-intro {
@@ -94,7 +94,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ACCORDÉON PRINCIPAL (comme version rouge validée) */
+/* ACCORDÉON PRINCIPAL */
 .acc-item {
   border-bottom: 1px solid var(--border);
 }
@@ -169,7 +169,7 @@ body {
   margin-right: 10px;
 }
 
-/* SOUS-CATEGORIES (version identique rouge adaptée bleu) */
+/* SOUS-CATEGORIES */
 .sub-item {
   border-top: 1px solid #1a1a1a;
   margin-top: 12px;
