@@ -35,7 +35,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('https://images.steamusercontent.com/ugc/931554890098249898/EE93D3F9672FEE6AF7A82A5608EB33F0F40FA72A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+  background-image: url('');
   background-size: cover;
   background-position: center 50%;
   filter: brightness(.5) saturate(1.2);
