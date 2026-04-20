@@ -6,14 +6,17 @@
 
 :root {
   --accent: #1443dd;
-  --blue:       #003cff;
-  --blue-dark:  #092686;
-  --bg:          #0d0d0d;
-  --bg-2:        #111;
-  --bg-3:        #161616;
-  --border:      #222;
-  --text:        #eee;
-  --muted:       #666;
+  --blue: #003cff;
+  --blue-dark: #092686;
+
+  --bg: #0d0d0d;
+  --bg-2: #111;
+  --bg-3: #161616;
+
+  --border: #222;
+
+  --text: #eee;
+  --muted: #666;
   --muted-light: #888;
 }
 
@@ -51,11 +54,11 @@ body {
 }
 
 /* ─────────────────────────
-   BANNIERE
+   BANNIÈRE
 ───────────────────────── */
 .banner {
   background: #0a0a0a;
-  border-bottom: 2px solid var(--green);
+  border-bottom: 2px solid var(--blue);
   padding: 52px 0;
   text-align: center;
   position: relative;
@@ -68,7 +71,7 @@ body {
   inset: 0;
   background: radial-gradient(
     ellipse 60% 80% at 50% 120%,
-    rgba(48,224,96,0.10) 0%,
+    rgba(0, 60, 255, 0.12) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -83,46 +86,5 @@ body {
 }
 
 .banner h1 span {
-  color: var(--green);
-}
-
-/* ─────────────────────────
-   RESPONSIVE
-───────────────────────── */
-
-/* Tablette */
-@media (max-width: 1024px) {
-  .page-content {
-    padding: 0 1.5rem 70px;
-  }
-
-  .banner {
-    padding: 42px 0;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  .page-content {
-    padding: 0 1rem 60px;
-  }
-
-  .banner {
-    padding: 34px 0;
-  }
-}
-
-/* Petit mobile */
-@media (max-width: 480px) {
-  .page-content {
-    padding: 0 0.8rem 50px;
-  }
-
-  .banner {
-    padding: 28px 0;
-  }
+  color: var(--blue);
 }
