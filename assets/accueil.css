@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+ 
+/* ─────────────────────────
+   BASE
+───────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+ 
+/* ─────────────────────────
+   HERO
+───────────────────────── */
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 70px);
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Fond image ville */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('https://images.steamusercontent.com/ugc/931554890098249898/EE93D3F9672FEE6AF7A82A5608EB33F0F40FA72A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+  background-size: cover;
+  background-position: center 50%;
+  filter: brightness(.5) saturate(1.2);
+}
+ 
+.hero__citysvg {
+  display: none;
+}
+ 
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom,
+      rgba(7,7,26,.25) 0%,
+      rgba(7,7,26,.05) 35%,
+      rgba(7,7,26,.6)  75%,
+      rgba(7,7,26,.95) 100%
+    );
+}
+ 
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+ 
+.hero__eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 20px;
+  padding: 6px 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 20px;
+  display: inline-block;
+}
+ 
+.hero__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 14vw, 160px);
+  letter-spacing: .06em;
+  line-height: .88;
+  color: #fff;
+  margin-bottom: 28px;
+}
+ 
+.hero__title span {
+  color: var(--red);
+}
+ 
+.hero__desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,.45);
+  line-height: 1.8;
+  max-width: 420px;
+  margin-bottom: 36px;
+}
+ 
+.hero__cta {
+  display: inline-block;
+  padding: 13px 36px;
+  background: var(--red);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background .2s, transform .15s;
+}
+ 
+.hero__cta:hover {
+  background: #c02020;
+  transform: translateY(-1px);
+}
+ 
+/* ─────────────────────────
+   RESPONSIVE
+───────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    height: calc(100svh - 70px);
+  }
+ 
+  .hero__title {
+    font-size: clamp(64px, 18vw, 100px);
+  }
+ 
+  .hero__desc {
+    font-size: 13px;
+  }
+}
