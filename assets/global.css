@@ -5,19 +5,16 @@
 }
 
 :root {
-  --accent: #1443dd;
-  --blue: #003cff;
-  --blue-dark: #092686;
-
-  --bg: #0d0d0d;
-  --bg-2: #111;
-  --bg-3: #161616;
-
-  --border: #222;
-
-  --text: #eee;
-  --muted: #666;
+  --green:       #1683ff;
+  --green-dark:  #024b8f;
+  --bg:          #0d0d0d;
+  --bg-2:        #111;
+  --bg-3:        #161616;
+  --border:      #222;
+  --text:        #eee;
+  --muted:       #666;
   --muted-light: #888;
+  --accent: #1255e7;
 }
 
 /* ─────────────────────────
