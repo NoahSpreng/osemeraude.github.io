@@ -34,23 +34,6 @@ body {
 }
 
 /* ─────────────────────────
-   LAYOUT
-───────────────────────── */
-.page-content {
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 0 2.5rem 80px;
-}
-
-.section-label {
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-/* ─────────────────────────
    BANNIERE
 ───────────────────────── */
 .banner {
