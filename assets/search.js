@@ -1,9 +1,3 @@
-/**
- * DISTRICT FA — Recherche globale
- * Colle ce fichier dans assets/ et inclus-le dans chaque page avant </body> :
- * <script src="../assets/search.js"></script>
- */
-
 (function () {
 
   // ── Pages à scanner ──────────────────────────────────────────────────────
